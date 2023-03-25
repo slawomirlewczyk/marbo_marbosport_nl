@@ -2203,7 +2203,7 @@
                                                         <iaixsl:if test="not(@size_id = 'uniw') or ((version) and (not(version/@product_name='')))">
                                                             (
                                                             <iaixsl:if test="not(@size_id = 'uniw')">
-                                                                Rozmiar: <b><iaixsl:value-of select="@size_desc"/></b></iaixsl:if>
+                                                                Maat: <b><iaixsl:value-of select="@size_desc"/></b></iaixsl:if>
                                                             <iaixsl:if test="not(@size_id = 'uniw') and ((version) and (not(version/@product_name='')))">
                                                                 ,
                                                             </iaixsl:if>
