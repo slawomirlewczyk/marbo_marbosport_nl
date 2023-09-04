@@ -3248,6 +3248,9 @@
 							</iaixsl:if>
 
                             <div class="product__sub">
+                                <iaixsl:if test="price/@yousave_percent != ''">
+                                    <span class="discount-percent">-<iaixsl:value-of select="price/@yousave_percent"/>%</span>
+                                </iaixsl:if>
                                 <div class="product__sub__sub">
 
                                     
@@ -3484,6 +3487,9 @@
                                                         </iaixsl:when>
                                                         <iaixsl:otherwise>
                                                             <iaixsl:if test="price/@maxprice or price/@maxprice_unit">
+                                                                <span class="omnibus-price">
+                                                                    Laagste productprijs in de afgelopen 30 dagen: <iaixsl:value-of select="price/@omnibus_price_formatted"/>
+                                                                </span>
                                                                 <del class="price --max">
                                                                     
                                                                     <iaixsl:choose>

@@ -2900,24 +2900,6 @@
 										<iaixsl:if test="not(page/projector/product/price/@maxprice_formatted) and not(/shop/page/projector/product/sizes/size[@selected='true']/price/@maxprice_formatted)">
 											<iaixsl:attribute name="style">display:none;</iaixsl:attribute>
 										</iaixsl:if>
-										<del class="projector_price_maxprice" id="projector_price_maxprice">
-											<iaixsl:choose>
-												<iaixsl:when test="/shop/page/projector/product/sizes/size[@selected='true']/price/@maxprice_formatted">
-                                                    <iaixsl:attribute name="id">lewczyk_projector_price_maxprice</iaixsl:attribute>
-													<iaixsl:value-of select="/shop/page/projector/product/sizes/size[@selected='true']/price/@maxprice_formatted"/>
-												</iaixsl:when>
-												<iaixsl:when test="/shop/page/projector/product/sizes/prices/@size_min_maxprice_formatted != /shop/page/projector/product/sizes/prices/@size_max_maxprice_formatted">
-                                                    <iaixsl:attribute name="id">lewczyk_projector_price_maxprice</iaixsl:attribute>
-													<span><iaixsl:value-of select="/shop/page/projector/product/sizes/prices/@size_min_maxprice_formatted"/></span>
-													<b> - </b>
-													<span><iaixsl:value-of select="/shop/page/projector/product/sizes/prices/@size_max_maxprice_formatted"/></span>
-												</iaixsl:when>
-												<iaixsl:when test="page/projector/product/price/@maxprice_formatted">
-                                                    <iaixsl:attribute name="id">lewczyk_projector_price_maxprice</iaixsl:attribute>
-													<iaixsl:value-of select="page/projector/product/price/@maxprice_formatted"/>
-												</iaixsl:when>
-											</iaixsl:choose>
-										</del>
 									</div>
 
 									<iaixsl:choose>
@@ -2954,28 +2936,6 @@
 													$('#projector_price_value').html(format_price("<iaixsl:value-of select="/shop/page/projector/product/sizes/prices/@minprice * page/projector/product/sizes/@unit_sellby"/>",{mask: app_shop.vars.currency_format,currency: "<iaixsl:value-of select="/shop/currency/@name"/>",currency_space: app_shop.vars.currency_space,currency_before_price: app_shop.vars.currency_before_value})+' - '+format_price("<iaixsl:value-of select="/shop/page/projector/product/sizes/prices/@maxprice * page/projector/product/sizes/@unit_sellby"/>",{mask: app_shop.vars.currency_format,currency: "<iaixsl:value-of select="/shop/currency/@name"/>",currency_space: app_shop.vars.currency_space,currency_before_price: app_shop.vars.currency_before_value}));
 												</script>
 											</iaixsl:if>
-
-											<div class="price_gross_info">
-												<small class="projector_price_unit_sep">
-													 / 
-												</small>
-												<small class="projector_price_unit_sellby" id="projector_price_unit_sellby" style="display:none">
-													<iaixsl:value-of select="/shop/page/projector/product/sizes/@unit_sellby"/>
-												</small>
-												<small class="projector_price_unit" id="projector_price_unit">
-													<iaixsl:value-of select="/shop/page/projector/product/sizes/@unit"/><iaixsl:value-of disable-output-escaping="yes" select="$hard_space"/>
-												</small>
-												<span>
-													<iaixsl:if test="not(/shop/contact/owner/@vat_registered = 'false')">
-														<iaixsl:choose>
-															<iaixsl:when test="/shop/page/projector/bundled/@collection = 'true' and $brutto_bundle_txt">
-																<iaixsl:value-of disable-output-escaping="yes" select="$brutto_bundle_txt"/>
-															</iaixsl:when>
-															<iaixsl:otherwise>bruto</iaixsl:otherwise>
-														</iaixsl:choose>
-													</iaixsl:if>
-												</span>
-											</div>
 										</iaixsl:otherwise>
 									</iaixsl:choose>
 
@@ -3007,7 +2967,55 @@
 
 									<div class="instalment_yousave">
 									<span id="projector_instalment_wrapper"/>
-
+                                    <iaixsl:if test="page/projector/product/price/@maxprice or page/projector/product/price/@maxprice_unit">
+                                        <span class="last-lowest-price d-flex flex-column flex-md-row">
+                                            <span class="pr-1">Laagste productprijs in de afgelopen 30 dagen:</span>
+                                            <span>
+                                                <del><iaixsl:value-of select="page/projector/product/price/@omnibus_price_formatted"/></del>
+                                                <iaixsl:if test="round((1 - (page/projector/product/price/@value div page/projector/product/price/@omnibus_price)) * 100) > 0">
+                                                    <span class="red pl-1">tot -<iaixsl:value-of select="round((1 - (page/projector/product/price/@value div page/projector/product/price/@omnibus_price)) * 100)"/>%</span>
+                                                </iaixsl:if>
+                                            </span>
+                                        </span>
+                                        <span class="pr-1">Normale prijs:</span>
+                                        <del>
+											<iaixsl:choose>
+												<iaixsl:when test="/shop/page/projector/product/sizes/size[@selected='true']/price/@maxprice_formatted">
+                                                    <iaixsl:attribute name="id">lewczyk_projector_price_maxprice</iaixsl:attribute>
+													<iaixsl:value-of select="/shop/page/projector/product/sizes/size[@selected='true']/price/@maxprice_formatted"/>
+												</iaixsl:when>
+												<iaixsl:when test="/shop/page/projector/product/sizes/prices/@size_min_maxprice_formatted != /shop/page/projector/product/sizes/prices/@size_max_maxprice_formatted">
+                                                    <iaixsl:attribute name="id">lewczyk_projector_price_maxprice</iaixsl:attribute>
+													<span><iaixsl:value-of select="/shop/page/projector/product/sizes/prices/@size_min_maxprice_formatted"/></span>
+													<b> - </b>
+													<span><iaixsl:value-of select="/shop/page/projector/product/sizes/prices/@size_max_maxprice_formatted"/></span>
+												</iaixsl:when>
+												<iaixsl:when test="page/projector/product/price/@maxprice_formatted">
+                                                    <iaixsl:attribute name="id">lewczyk_projector_price_maxprice</iaixsl:attribute>
+													<iaixsl:value-of select="page/projector/product/price/@maxprice_formatted"/>
+												</iaixsl:when>
+                                                <iaixsl:when test="page/projector/product/bundle_price/@price_gross_formatted and page/projector/product/bundle_price/@price_gross > page/projector/product/price/@value">
+                                                    <iaixsl:attribute name="id">lewczyk_projector_price_maxprice</iaixsl:attribute>
+													<iaixsl:value-of select="page/projector/product/bundle_price/@price_gross_formatted"/>
+												</iaixsl:when>
+											</iaixsl:choose>
+										</del>
+                                        <iaixsl:choose>
+											<iaixsl:when test="/shop/page/projector/product/sizes/size[@selected='true']/price/@yousave_percent">
+												<span class="projector_price_save_percent red">
+													-<iaixsl:value-of select="/shop/page/projector/product/sizes/size[@selected='true']/price/@yousave_percent"/>% 
+												</span>
+											</iaixsl:when>
+											<iaixsl:when test="page/projector/product/price/@yousave_percent">
+												<span class="projector_price_save_percent red">
+													-<iaixsl:value-of select="page/projector/product/price/@yousave_percent"/>% 
+												</span>
+											</iaixsl:when>
+											<iaixsl:otherwise>
+												<iaixsl:attribute name="style">display:none;</iaixsl:attribute>
+											</iaixsl:otherwise>
+										</iaixsl:choose>
+                                    </iaixsl:if>
 									<iaixsl:choose>
 										<iaixsl:when test="/shop/page/projector/product/bundle_price/@amount_diff_gross and /shop/page/projector/bundled/@collection = 'true' and $taniej_bundle_txt">
 											<span class="projector_price_yousave" id="projector_price_yousave_bundle">
@@ -3019,10 +3027,10 @@
 											</span>
 										</iaixsl:when>
 										<iaixsl:otherwise>
-											<span class="projector_price_yousave" id="projector_price_yousave">
+											<span class="projector_price_yousave">
 												<iaixsl:choose>
 													<iaixsl:when test="/shop/page/projector/product/bundle_price/@amount_diff_gross">
-														<span class="projector_price_save_text">Kopen als een set,<b>je bespaart</b> 
+														<span class="projector_price_save_text pr-1">Kopen als een set,<b>je bespaart</b> 
 														</span>
 														<span class="projector_price_save_percent">
 															<iaixsl:value-of select="translate(/shop/page/projector/product/bundle_price/@percent_diff, '.', ',')"/><b>%</b> 
@@ -3030,23 +3038,6 @@
 														<span class="projector_price_save_value">
 															(<span class="projector_price"><iaixsl:value-of select="/shop/page/projector/product/bundle_price/@amount_diff_gross"/><span class="projector_currency"><iaixsl:value-of select="/shop/currency/@name"/></span></span>)
 														</span>
-													</iaixsl:when>
-													<iaixsl:when test="/shop/page/projector/product/sizes/size[@selected='true']/price/@yousave_percent">
-														<span class="projector_price_save_text">Sla</span>
-														<span class="projector_price_save_percent">
-															<iaixsl:value-of select="/shop/page/projector/product/sizes/size[@selected='true']/price/@yousave_percent"/><b>%</b> 
-														</span>
-														<span class="projector_price_save_value">
-															(<span class="projector_price"><iaixsl:value-of select="/shop/page/projector/product/sizes/size[@selected='true']/price/@yousave_formatted"/></span>)
-														</span>
-													</iaixsl:when>
-													<iaixsl:when test="page/projector/product/price/@yousave_percent">
-														<span class="projector_price_save_text">Sla</span>
-														<span class="projector_price_save_percent">
-															<iaixsl:value-of select="page/projector/product/price/@yousave_percent"/><b>%</b> 
-														</span>
-														<span class="projector_price_save_value">
-															(<span class="projector_price"><iaixsl:value-of select="page/projector/product/price/@yousave_formatted"/></span>).</span>
 													</iaixsl:when>
 													<iaixsl:otherwise>
 														<iaixsl:attribute name="style">display:none;</iaixsl:attribute>

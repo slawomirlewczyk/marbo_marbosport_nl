@@ -2886,6 +2886,7 @@ img.b-loaded{opacity:1;-webkit-transition:opacity 500ms ease-in-out 100ms;-moz-t
 .product__prices .price{order:1;}
 .product__prices .price.--max{order:2;}
 .product__prices .price.--points{order:3;}
+.product__prices .omnibus-price{order:4;font-size: 10px;color: #333333;}
 .product__firm{font-size:1.3rem;margin-bottom:10px;}
 .product__cleardescription{font-size:1.3rem;margin-bottom:15px;}
 .product__opinion{margin-top:2rem;padding-top:2rem;border-top:1px solid #dbdbdb;}
@@ -6101,6 +6102,7 @@ div.product_section .fancy-select{display:block;}
 #projector_prices_wrapper .projector_price_subwrapper :not(#projector_price_maxprice_wrapper[style*="display:none;"]) + strong{color:#dd0608;}
 #projector_prices_wrapper .projector_price_subwrapper .price_gross_info{order:3;}
 #projector_prices_wrapper .projector_price_subwrapper .instalment_yousave{flex:0 0 100%;max-width:100%;order:4;}
+#projector_prices_wrapper .projector_price_subwrapper .instalment_yousave .projector_price_yousave{display: flex;}
 div.comments small{margin-right:5px;margin-left:9px;}
 div.comments i{font-size:1.2em;}
 .select_button{border:1px solid #dbdbdb;background:#ffffff;box-shadow:none;color:#333333;cursor:pointer;padding:10px 14px;text-align:center;display:block;text-decoration:none;position:relative;}
@@ -7461,7 +7463,7 @@ label[for="PriceRangeFrom"] input,label[for="PriceRangeTo"] input{border:none;}
 #search .product__prices{flex-wrap:wrap;justify-content:flex-start;}
 #search .product__prices__wrapper{align-items:center;display:flex;}
 @media (min-width:979px){#search .product__prices__wrapper{border-top:1px solid #dbdbdb;padding-top:0.5rem}}
-#search .product__prices__wrapper > div{padding-top:0.5rem;padding-bottom:0.5rem;}
+#search .product__prices__wrapper > div{padding-top:0.5rem;padding-bottom:0.5rem;max-width: 75%;}
 #search .product__prices__wrapper .product__availability{align-items:center;display:flex;margin-left:auto;padding:0 0 0 1rem;}
 @media (min-width:979px){#search .product__prices__wrapper .product__availability{display:flex}}
 #search .product__prices__wrapper .product__availability__status{margin-right:0.5rem;display:flex;align-items:center;}
@@ -8204,3 +8206,23 @@ div.text_menu_sub li{display:inline-block;margin-bottom:5px;vertical-align:top;w
     font-weight: normal;
 }
 .opinions_element_confirmed_text::before{content:"\f00c";font-family:FontAwesome;margin-left:2px;font-weight: 100;}
+.discount-percent {
+    position: absolute;
+    right: 1px;
+    z-index: 1;
+    top: 25%;
+    background-color: #E00E15;
+    color: #fff;
+    padding: 4px 8px;
+}
+.product__sub.details:has(.product__versions) .discount-percent{
+    display: none;
+}
+@media (max-width:756px) {
+    .discount-percent {
+        right: calc(3px - 1rem);
+    }
+}
+.red {
+    color: #dd0608;
+}
