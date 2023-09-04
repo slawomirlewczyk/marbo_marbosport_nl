@@ -8,7 +8,7 @@
                 <iaixsl:text disable-output-escaping="yes">&lt;html lang="</iaixsl:text><iaixsl:value-of select="/shop/language/option[@selected = 'true']/@name"/><iaixsl:text disable-output-escaping="yes">"</iaixsl:text><iaixsl:if test="(/shop/page/@type = 'prepaid' and /shop/page/prepaid/details/@msg = 'order') or /shop/page/@type = 'order-nonstandardized' or /shop/page/@type = 'order1' or /shop/page/@type = 'order2' or /shop/page/@type = 'pickup-sites' or /shop/page/@type = 'place-order'"><iaixsl:text disable-output-escaping="yes"> class="order_process"</iaixsl:text></iaixsl:if><iaixsl:text disable-output-escaping="yes"> &gt;</iaixsl:text>
                 <iaixsl:if test="$meta_langcode_iso639"><iaixsl:attribute name="lang"><iaixsl:value-of select="$meta_langcode_iso639"/></iaixsl:attribute></iaixsl:if>
                 <head>
-                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
+                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
                     <iaixsl:variable name="meta_breadcrumb">
                         <iaixsl:if test="(page/@type='search') or (page/@type='navigation') or (page/@type='projector')">
                             <iaixsl:choose>
@@ -394,7 +394,7 @@
 												<iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
 												<iaixsl:choose>
 													<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-														<img src="/gfx/pol/loader.gif?r=1612518076">
+														<img src="/gfx/dut/loader.gif?r=1612518076">
 															<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 															<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 															<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -427,7 +427,7 @@
 										<iaixsl:otherwise>
 											<iaixsl:choose>
 												<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-													<img src="/gfx/pol/loader.gif?r=1612518076">
+													<img src="/gfx/dut/loader.gif?r=1612518076">
 														<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 														<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 														<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2111,9 +2111,9 @@
                                                             <script>rma_add_paymentTrigger = 1;</script>
                                                         </iaixsl:if>
                                                         <span class="rma_add_form_infotitle2">Adres:<iaixsl:if test="/shop/page/rma/payments/@active = '1'">
-                                                                <img class="rma_need" src="/gfx/pol/need.gif?r=1612518076"><iaixsl:attribute name="alt">To pole jest wymagane do złożenia zamówienia</iaixsl:attribute></img>
-                                                                <img src="/gfx/pol/correct.png?r=1612518076" class="rma_correct_img" id="rma_add_przekaz_on" style="display:none;"/>
-                                                                <img src="/gfx/pol/incorrect.png?r=1612518076" class="rma_correct_img" id="rma_add_przekaz_off" style="display:none;"/>
+                                                                <img class="rma_need" src="/gfx/dut/need.gif?r=1612518076"><iaixsl:attribute name="alt">To pole jest wymagane do złożenia zamówienia</iaixsl:attribute></img>
+                                                                <img src="/gfx/dut/correct.png?r=1612518076" class="rma_correct_img" id="rma_add_przekaz_on" style="display:none;"/>
+                                                                <img src="/gfx/dut/incorrect.png?r=1612518076" class="rma_correct_img" id="rma_add_przekaz_off" style="display:none;"/>
                                                             </iaixsl:if>
                                                         </span>
                                                         <textarea id="rma_add_form_przekaz" class="rma_add_form_input" name="payment_addres2" onkeyup="rma_add.checkInps('payment_addres2');">
@@ -2126,9 +2126,9 @@
                                                             <script>rma_add_paymentTrigger = 2;</script>
                                                         </iaixsl:if>
                                                         <span class="rma_add_form_infotitle2">Rekeningnummer:<iaixsl:if test="/shop/page/rma/payments/@active = '1'">
-                                                                <img class="rma_need" src="/gfx/pol/need.gif?r=1612518076"><iaixsl:attribute name="alt">To pole jest wymagane do złożenia zamówienia</iaixsl:attribute></img>
-                                                                <img src="/gfx/pol/correct.png?r=1612518076" class="rma_correct_img" id="rma_add_bankaccount_on" style="display:none;"/>
-                                                                <img src="/gfx/pol/incorrect.png?r=1612518076" class="rma_correct_img" id="rma_add_bankaccount_off" style="display:none;"/>
+                                                                <img class="rma_need" src="/gfx/dut/need.gif?r=1612518076"><iaixsl:attribute name="alt">To pole jest wymagane do złożenia zamówienia</iaixsl:attribute></img>
+                                                                <img src="/gfx/dut/correct.png?r=1612518076" class="rma_correct_img" id="rma_add_bankaccount_on" style="display:none;"/>
+                                                                <img src="/gfx/dut/incorrect.png?r=1612518076" class="rma_correct_img" id="rma_add_bankaccount_off" style="display:none;"/>
                                                             </iaixsl:if>
                                                         </span>
                                                         <input id="rma_add_form_bankaccount" class="rma_add_form_input" type="text" name="payment_addres1" onkeyup="rma_add.checkInps('payment_addres1');">
@@ -2143,9 +2143,9 @@
                                                             <script>rma_add_paymentTrigger = 3;</script>
                                                         </iaixsl:if>
                                                         <span class="rma_add_form_infotitle2">Details voor de cheque:<iaixsl:if test="/shop/page/rma/payments/@active = '1'">
-                                                                <img class="rma_need" src="/gfx/pol/need.gif?r=1612518076"><iaixsl:attribute name="alt">To pole jest wymagane do złożenia zamówienia</iaixsl:attribute></img>
-                                                                <img src="/gfx/pol/correct.png?r=1612518076" class="rma_correct_img" id="rma_add_czek_on" style="display:none;"/>
-                                                                <img src="/gfx/pol/incorrect.png?r=1612518076" class="rma_correct_img" id="rma_add_czek_off" style="display:none;"/>
+                                                                <img class="rma_need" src="/gfx/dut/need.gif?r=1612518076"><iaixsl:attribute name="alt">To pole jest wymagane do złożenia zamówienia</iaixsl:attribute></img>
+                                                                <img src="/gfx/dut/correct.png?r=1612518076" class="rma_correct_img" id="rma_add_czek_on" style="display:none;"/>
+                                                                <img src="/gfx/dut/incorrect.png?r=1612518076" class="rma_correct_img" id="rma_add_czek_off" style="display:none;"/>
                                                             </iaixsl:if>
                                                         </span>
                                                         <textarea id="rma_add_form_czek" class="rma_add_form_input" name="payment_addres3" onkeyup="rma_add.checkInps('payment_addres3');">

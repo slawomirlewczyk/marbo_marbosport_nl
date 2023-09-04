@@ -394,7 +394,7 @@
 												<iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
 												<iaixsl:choose>
 													<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-														<img src="/gfx/pol/loader.gif?r=1612518076">
+														<img src="/gfx/dut/loader.gif?r=1612518076">
 															<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 															<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 															<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -427,7 +427,7 @@
 										<iaixsl:otherwise>
 											<iaixsl:choose>
 												<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-													<img src="/gfx/pol/loader.gif?r=1612518076">
+													<img src="/gfx/dut/loader.gif?r=1612518076">
 														<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 														<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 														<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -3423,7 +3423,7 @@
                     <div id="superfairshop_info">
                         <div class="superfairshop_info_wrapper">
                             <div>
-                                <img src="/gfx/pol/iai_security_supershop.png?r=1612518076" alt="SuperFair.Shop badge"/>
+                                <img src="/gfx/dut/iai_security_supershop.png?r=1612518076" alt="SuperFair.Shop badge"/>
                                 <strong>Wij verzenden alle pakketten binnen de aangegeven tijd</strong>
                                 <p>Wij bezitten de SuperFair.Shop™ onderscheiding waarbij onze zendingen dagelijks automatisch worden gecontroleerd op naleving van de aangegeven verzendtijden.</p>
                                 <p>De prijs betekent dat onze zendingen volgens schema worden verzonden. Wij geven ook om uw veiligheid en gemak.</p>
@@ -4725,7 +4725,7 @@
                                             <iaixsl:attribute name="href"><iaixsl:value-of select="$var_link"/></iaixsl:attribute>
                                             <iaixsl:attribute name="title"><iaixsl:value-of select="$var_name"/></iaixsl:attribute>
 
-                                            <img src="/gfx/pol/loader.gif?r=1612518076" class="b-lazy">
+                                            <img src="/gfx/dut/loader.gif?r=1612518076" class="b-lazy">
                                                 <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
@@ -5063,7 +5063,7 @@
                                                     <iaixsl:attribute name="href"><iaixsl:value-of select="$var_link"/></iaixsl:attribute>
                                                     <iaixsl:attribute name="title"><iaixsl:value-of select="$var_name"/></iaixsl:attribute>
 
-                                                    <img src="/gfx/pol/loader.gif?r=1612518076" class="b-lazy">
+                                                    <img src="/gfx/dut/loader.gif?r=1612518076" class="b-lazy">
                                                         <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
                                                         <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
                                                         <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
@@ -5466,7 +5466,7 @@
                                                 <iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
                                                 <iaixsl:choose>
                                                     <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                        <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                        <img src="/gfx/dut/loader.gif?r=1612518076">
                                                             <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                             <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                             <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -5499,7 +5499,7 @@
                                         <iaixsl:otherwise>
                                             <iaixsl:choose>
                                                 <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                    <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                    <img src="/gfx/dut/loader.gif?r=1612518076">
                                                         <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                         <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                         <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -5927,7 +5927,7 @@
                                     <iaixsl:value-of select="/shop/action_alert/products/product/name"/>
                                 </iaixsl:attribute>
 
-                                <img src="/gfx/pol/loader.gif?r=1612518076" class="b-lazy">
+                                <img src="/gfx/dut/loader.gif?r=1612518076" class="b-lazy">
                                     <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="/shop/action_alert/products/product/icon"/>
                                     </iaixsl:attribute>
                                     <iaixsl:attribute name="alt">
@@ -6071,7 +6071,7 @@
                                                     <iaixsl:attribute name="href"><iaixsl:value-of select="$var_link"/></iaixsl:attribute>
                                                     <iaixsl:attribute name="title"><iaixsl:value-of select="$var_name"/></iaixsl:attribute>
 
-                                                    <img src="/gfx/pol/loader.gif?r=1612518076" class="b-lazy">
+                                                    <img src="/gfx/dut/loader.gif?r=1612518076" class="b-lazy">
                                                         <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
                                                         <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
                                                         <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>

@@ -8,7 +8,7 @@
                 <iaixsl:text disable-output-escaping="yes">&lt;html lang="</iaixsl:text><iaixsl:value-of select="/shop/language/option[@selected = 'true']/@name"/><iaixsl:text disable-output-escaping="yes">"</iaixsl:text><iaixsl:if test="(/shop/page/@type = 'prepaid' and /shop/page/prepaid/details/@msg = 'order') or /shop/page/@type = 'order-nonstandardized' or /shop/page/@type = 'order1' or /shop/page/@type = 'order2' or /shop/page/@type = 'pickup-sites' or /shop/page/@type = 'place-order'"><iaixsl:text disable-output-escaping="yes"> class="order_process"</iaixsl:text></iaixsl:if><iaixsl:text disable-output-escaping="yes"> &gt;</iaixsl:text>
                 <iaixsl:if test="$meta_langcode_iso639"><iaixsl:attribute name="lang"><iaixsl:value-of select="$meta_langcode_iso639"/></iaixsl:attribute></iaixsl:if>
                 <head>
-                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
+                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
                     <iaixsl:variable name="meta_breadcrumb">
                         <iaixsl:if test="(page/@type='search') or (page/@type='navigation') or (page/@type='projector')">
                             <iaixsl:choose>
@@ -394,7 +394,7 @@
 												<iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
 												<iaixsl:choose>
 													<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-														<img src="/gfx/pol/loader.gif?r=1612518076">
+														<img src="/gfx/dut/loader.gif?r=1612518076">
 															<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 															<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 															<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -427,7 +427,7 @@
 										<iaixsl:otherwise>
 											<iaixsl:choose>
 												<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-													<img src="/gfx/pol/loader.gif?r=1612518076">
+													<img src="/gfx/dut/loader.gif?r=1612518076">
 														<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 														<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 														<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -1655,7 +1655,7 @@
                                         </iaixsl:choose>
                                             <iaixsl:if test="@href"><iaixsl:attribute name="href"><iaixsl:value-of select="@href"/></iaixsl:attribute></iaixsl:if>
                                             <iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute><iaixsl:choose>
-                                                <iaixsl:when test="image or image_desktop or image_tablet or image_mobile"><img src="/gfx/pol/loader.gif?r=1612518076">
+                                                <iaixsl:when test="image or image_desktop or image_tablet or image_mobile"><img src="/gfx/dut/loader.gif?r=1612518076">
                                                     <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                     <iaixsl:if test="image_desktop or image_tablet or image_mobile">
                                                         <iaixsl:attribute name="class">rwd-src</iaixsl:attribute>
@@ -1724,7 +1724,7 @@
                                             <iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
                                             <iaixsl:choose>
                                                 <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                    <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                    <img src="/gfx/dut/loader.gif?r=1612518076">
                                                         <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                         <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                         <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -1758,7 +1758,7 @@
                                         
                                             <iaixsl:choose>
                                                 <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                    <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                    <img src="/gfx/dut/loader.gif?r=1612518076">
                                                         <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                         <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                         <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -1799,6 +1799,65 @@
                 </div>
             </iaixsl:if>
         <!--Strona główna (main, 118889.1)-->
+            <iaixsl:if test="1">
+                <div id="menu_categories5" >
+                    <div class="big_label">
+                        Onze productlijnen
+                    </div>
+                    <div class="tab_img_wrapper">
+                        <iaixsl:for-each select="navigation5/item">
+                            <iaixsl:if test="position() = 1 and @gfx">
+                            <a>
+                                <iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
+                                <iaixsl:attribute name="title"><iaixsl:value-of select="@name"/></iaixsl:attribute>
+                                <img>
+                                    <iaixsl:attribute name="src"><iaixsl:value-of disable-output-escaping="yes" select="@gfx"/></iaixsl:attribute>
+                                    <iaixsl:attribute name="alt"><iaixsl:value-of select="@name"/></iaixsl:attribute>
+                                </img>
+                            </a>
+                            </iaixsl:if>
+                        </iaixsl:for-each>
+                        <ul class="navbar_dots">
+                            <iaixsl:for-each select="navigation5/item">
+                                <li class="tab_item">
+                                    <button type="button">
+                                        <iaixsl:attribute name="class">
+                                            tab_link
+                                            
+                                        </iaixsl:attribute>
+                                        <iaixsl:attribute name="data-ni"><iaixsl:value-of select="@ni"/></iaixsl:attribute>
+                                        <iaixsl:attribute name="data-tab"><iaixsl:value-of select="position()"/></iaixsl:attribute>
+                                    </button>
+                                </li>
+                            </iaixsl:for-each>
+                        </ul>
+                    </div>
+                    <ul class="navbar_tab">
+                        <iaixsl:for-each select="navigation5/item">
+                            <li class="tab_item">
+                                <a>
+                                    <iaixsl:attribute name="class">
+                                        tab_link
+                                        
+                                    </iaixsl:attribute>
+                                    <iaixsl:attribute name="href"><iaixsl:value-of select="@link"/></iaixsl:attribute>
+                                    <iaixsl:if test="@gfx">
+                                        <iaixsl:attribute name="data-gfx"><iaixsl:value-of disable-output-escaping="yes" select="@gfx"/></iaixsl:attribute>
+                                    </iaixsl:if>
+                                    <iaixsl:attribute name="data-name"><iaixsl:value-of select="@name"/></iaixsl:attribute>
+                                    <iaixsl:attribute name="data-ni"><iaixsl:value-of select="@ni"/></iaixsl:attribute>
+                                    <iaixsl:attribute name="data-tab"><iaixsl:value-of select="position()"/></iaixsl:attribute>
+                                    <iaixsl:if test="@gfx_onmouseover">
+                                        
+                                        <iaixsl:text disable-output-escaping="yes">&lt;span class="tab_link_gfx" style="background-image: url('</iaixsl:text><iaixsl:value-of select="@gfx_onmouseover"/><iaixsl:text disable-output-escaping="yes">')"&gt;&lt;/span&gt;</iaixsl:text>
+                                    </iaixsl:if>
+                                    <span class="tab_link_txt"><iaixsl:value-of select="@name"/></span>
+                                </a>
+                            </li>
+                        </iaixsl:for-each>
+                    </ul>
+                </div>
+            </iaixsl:if>
             <iaixsl:if test="commercial_button/link[position() = 2]">
                 <iaixsl:for-each select="commercial_button/link[position() = 2]">
                     <iaixsl:choose>
@@ -1811,7 +1870,7 @@
                                         <iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
                                         <iaixsl:choose>
                                             <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                <img src="/gfx/dut/loader.gif?r=1612518076">
                                                     <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                     <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                     <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -1844,7 +1903,7 @@
                                 <iaixsl:otherwise>
                                     <iaixsl:choose>
                                         <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                            <img src="/gfx/pol/loader.gif?r=1612518076">
+                                            <img src="/gfx/dut/loader.gif?r=1612518076">
                                                 <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                 <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -1954,7 +2013,7 @@
                                             <iaixsl:attribute name="href"><iaixsl:value-of select="$var_link"/></iaixsl:attribute>
                                             <iaixsl:attribute name="title"><iaixsl:value-of select="$var_name"/></iaixsl:attribute>
 
-                                            <img src="/gfx/pol/loader.gif?r=1612518076" class="b-lazy">
+                                            <img src="/gfx/dut/loader.gif?r=1612518076" class="b-lazy">
                                                 <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
@@ -2313,7 +2372,7 @@
                                             <iaixsl:attribute name="href"><iaixsl:value-of select="$var_link"/></iaixsl:attribute>
                                             <iaixsl:attribute name="title"><iaixsl:value-of select="$var_name"/></iaixsl:attribute>
 
-                                            <img src="/gfx/pol/loader.gif?r=1612518076" class="b-lazy">
+                                            <img src="/gfx/dut/loader.gif?r=1612518076" class="b-lazy">
                                                 <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>
@@ -2614,7 +2673,7 @@
                                                     <iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
                                                     <iaixsl:choose>
                                                         <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                            <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                            <img src="/gfx/dut/loader.gif?r=1612518076">
                                                                 <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                                 <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                                 <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2647,7 +2706,7 @@
                                             <iaixsl:otherwise>
                                                 <iaixsl:choose>
                                                     <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                        <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                        <img src="/gfx/dut/loader.gif?r=1612518076">
                                                             <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                             <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                             <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2700,7 +2759,7 @@
                                                             <iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
                                                             <iaixsl:choose>
                                                                 <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                                    <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                                    <img src="/gfx/dut/loader.gif?r=1612518076">
                                                                         <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                                         <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                                         <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2733,7 +2792,7 @@
                                                     <iaixsl:otherwise>
                                                         <iaixsl:choose>
                                                             <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                                <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                                <img src="/gfx/dut/loader.gif?r=1612518076">
                                                                     <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                                     <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                                     <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2786,7 +2845,7 @@
                                                     <iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
                                                     <iaixsl:choose>
                                                         <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                            <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                            <img src="/gfx/dut/loader.gif?r=1612518076">
                                                                 <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                                 <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                                 <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2819,7 +2878,7 @@
                                             <iaixsl:otherwise>
                                                 <iaixsl:choose>
                                                     <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                        <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                        <img src="/gfx/dut/loader.gif?r=1612518076">
                                                             <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                             <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                             <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2931,7 +2990,7 @@
                                                 <iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
                                                 <iaixsl:choose>
                                                     <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                        <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                        <img src="/gfx/dut/loader.gif?r=1612518076">
                                                             <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                             <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                             <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2964,7 +3023,7 @@
                                         <iaixsl:otherwise>
                                             <iaixsl:choose>
                                                 <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                    <img src="/gfx/pol/loader.gif?r=1612518076">
+                                                    <img src="/gfx/dut/loader.gif?r=1612518076">
                                                         <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                         <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                         <iaixsl:if test="image_desktop or image_tablet or image_mobile">

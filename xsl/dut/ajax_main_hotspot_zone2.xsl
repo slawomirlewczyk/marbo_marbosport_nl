@@ -71,7 +71,7 @@
                                             <iaixsl:attribute name="href"><iaixsl:value-of select="$var_link"/></iaixsl:attribute>
                                             <iaixsl:attribute name="title"><iaixsl:value-of select="$var_name"/></iaixsl:attribute>
 
-                                            <img src="/gfx/pol/loader.gif?r=1612518076" class="b-lazy">
+                                            <img src="/gfx/dut/loader.gif?r=1612518076" class="b-lazy">
                                                 <iaixsl:attribute name="data-src-small"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon_small"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="data-src"><iaixsl:value-of disable-output-escaping="yes" select="$var_icon"/></iaixsl:attribute>
                                                 <iaixsl:attribute name="alt"><iaixsl:value-of disable-output-escaping="yes" select="$var_name"/></iaixsl:attribute>

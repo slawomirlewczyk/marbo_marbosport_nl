@@ -40,8 +40,27 @@ const deliveryViewOscop = (function prepareView() {
       "December",
     ],
   };
+  const decodeEntities = (function() {
+    // this prevents any overhead from creating the object each time
+    var element = document.createElement('div');
+  
+    function decodeHTMLEntities (str) {
+      if(str && typeof str === 'string') {
+        // strip script/html tags
+        str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
+        str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');
+        element.innerHTML = str;
+        str = element.textContent;
+        element.textContent = '';
+      }
+  
+      return str;
+    }
+  
+    return decodeHTMLEntities;
+  })();
   const template = (element, time) =>
-    `<div class="delivery__item mb-3"><input id="shipping_${element.id}"value="${element.id}"name="shipping"type="radio"data-create_order="shipping"data-pickuppoint="${element.pickuppoint}"data-calendar="${element.calendar}"data-delivery="${element.time_days}#${element.time_hours}#${element.time_minutes}"data-preparation="${element.deliverytime_days}#${element.deliverytime_hours}#${element.deliverytime_minutes}"><label class="delivery__label d-flex align-items-center py-2 px-3"for="shipping_${element.id}"><span class="delivery__icon"><img src="${element.icon}"></span><span class="delivery__name">${element.name}<i class="delivery__time">${time}</i></span><span class="delivery__price">${element.cost_formatted}</span></label></div>`;
+    `<div class="delivery__item mb-3"><input id="shipping_${element.id}"value="${element.id}"name="shipping"type="radio"data-create_order="shipping"data-pickuppoint="${element.pickuppoint}"data-calendar="${element.calendar}"data-delivery="${element.time_days}#${element.time_hours}#${element.time_minutes}"data-preparation="${element.deliverytime_days}#${element.deliverytime_hours}#${element.deliverytime_minutes}"><label class="delivery__label d-flex align-items-center py-2 px-3"for="shipping_${element.id}"><span class="delivery__icon"><img src="${element.icon}"></span><span class="d-flex flex-column"><span class="delivery__name">${element.name}<i class="delivery__time">${time}</i></span><span class="delivery__comment">${decodeEntities(element.comment)}</span></span><span class="delivery__price">${element.cost_formatted}</span></label></div>`;
   const getElementTime = (element) => {
     let time = "";
     if (

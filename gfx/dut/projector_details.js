@@ -403,6 +403,7 @@ app_shop.fn.shipping_info = function (id, size, quantity, url) {
       html.push(
         '<span class="shipping_info_name">',
         item.name,
+        `<p style="font-weight:normal;">${item.comment}</p>`,
         shiping_info,
         "</div>"
       );
@@ -417,7 +418,7 @@ app_shop.fn.shipping_info = function (id, size, quantity, url) {
         }
       html.push('<span class="shipping_info_price">');
       if (item.minworthreached != "false")
-        if (item.cost > 0) {
+        if (item.cost > 0 || item.courier_company_group_key == "ownCourierPrepaid") {
           html.push(item.cost_formatted);
         } else {
           html.push(gratis_txt);

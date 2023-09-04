@@ -6157,7 +6157,7 @@ div.comments i{font-size:1.2em;}
 #dialog_wrapper.dialog_wrapper_shipping_info .shipping_info_header{display:table-cell;width:80%;vertical-align:middle;padding:10px 0;}
 #dialog_wrapper.dialog_wrapper_shipping_info .shipping_info_icon{float:left;margin-right:5px;max-width:50px;}
 #dialog_wrapper.dialog_wrapper_shipping_info .shipping_info_name{display:block;font-size:11px;font-weight:bold;line-height:1.2;text-align:left;float:left;width:65%;}
-@media (min-width:757px){#dialog_wrapper.dialog_wrapper_shipping_info .shipping_info_name{width:73%}}
+@media (min-width:757px){#dialog_wrapper.dialog_wrapper_shipping_info .shipping_info_name{width:85%}}
 #dialog_wrapper.dialog_wrapper_shipping_info .shipping_info_time{font-size:10px;font-weight:normal;}
 #dialog_wrapper.dialog_wrapper_shipping_info .shipping_info_pricebox{display:table-cell;padding:10px 0;vertical-align:middle;width:20%;text-align:right;}
 #dialog_wrapper.dialog_wrapper_shipping_info .shipping_info_price{font-weight:bold;}

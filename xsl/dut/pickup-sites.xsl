@@ -8,7 +8,7 @@
                 <iaixsl:text disable-output-escaping="yes">&lt;html lang="</iaixsl:text><iaixsl:value-of select="/shop/language/option[@selected = 'true']/@name"/><iaixsl:text disable-output-escaping="yes">"</iaixsl:text><iaixsl:if test="(/shop/page/@type = 'prepaid' and /shop/page/prepaid/details/@msg = 'order') or /shop/page/@type = 'order-nonstandardized' or /shop/page/@type = 'order1' or /shop/page/@type = 'order2' or /shop/page/@type = 'pickup-sites' or /shop/page/@type = 'place-order'"><iaixsl:text disable-output-escaping="yes"> class="order_process"</iaixsl:text></iaixsl:if><iaixsl:text disable-output-escaping="yes"> &gt;</iaixsl:text>
                 <iaixsl:if test="$meta_langcode_iso639"><iaixsl:attribute name="lang"><iaixsl:value-of select="$meta_langcode_iso639"/></iaixsl:attribute></iaixsl:if>
                 <head>
-                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
+                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
                     <iaixsl:variable name="meta_breadcrumb">
                         <iaixsl:if test="(page/@type='search') or (page/@type='navigation') or (page/@type='projector')">
                             <iaixsl:choose>
@@ -394,7 +394,7 @@
 												<iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
 												<iaixsl:choose>
 													<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-														<img src="/gfx/pol/loader.gif?r=1612518076">
+														<img src="/gfx/dut/loader.gif?r=1612518076">
 															<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 															<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 															<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -427,7 +427,7 @@
 										<iaixsl:otherwise>
 											<iaixsl:choose>
 												<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-													<img src="/gfx/pol/loader.gif?r=1612518076">
+													<img src="/gfx/dut/loader.gif?r=1612518076">
 														<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 														<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 														<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2484,12 +2484,12 @@
                     Wybierz <iaixsl:value-of select="page/pickups/@validName"/>
                 </h1>
 
-                <img class="markerCluster" style="display:none;" src="/gfx/pol/m1.png?r=1612518076"/>
-                <img class="markerCluster" style="display:none;" src="/gfx/pol/m2.png?r=1612518076"/>
-                <img class="markerCluster" style="display:none;" src="/gfx/pol/m3.png?r=1612518076"/>
-                <img class="markerCluster" style="display:none;" src="/gfx/pol/m4.png?r=1612518076"/>
-                <img class="markerCluster" style="display:none;" src="/gfx/pol/m5.png?r=1612518076"/>
-                <img class="marker_face" src="/gfx/pol/marker_face.png?r=1612518076"/>
+                <img class="markerCluster" style="display:none;" src="/gfx/dut/m1.png?r=1612518076"/>
+                <img class="markerCluster" style="display:none;" src="/gfx/dut/m2.png?r=1612518076"/>
+                <img class="markerCluster" style="display:none;" src="/gfx/dut/m3.png?r=1612518076"/>
+                <img class="markerCluster" style="display:none;" src="/gfx/dut/m4.png?r=1612518076"/>
+                <img class="markerCluster" style="display:none;" src="/gfx/dut/m5.png?r=1612518076"/>
+                <img class="marker_face" src="/gfx/dut/marker_face.png?r=1612518076"/>
 
                 <div class="pickup_site_sub">
                     <iaixsl:choose>
@@ -2566,7 +2566,7 @@
                                                         z
                                                         <span class="loadingMarkersCount"/>
                                                     </span>
-                                                    <img class="loadingMapImg" src="/gfx/pol/mapLoader.gif?r=1612518076"/>
+                                                    <img class="loadingMapImg" src="/gfx/dut/mapLoader.gif?r=1612518076"/>
                                                 </div>
                                             </div>
                                         </div>
