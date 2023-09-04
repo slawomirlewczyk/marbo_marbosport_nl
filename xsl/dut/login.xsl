@@ -8,7 +8,7 @@
                 <iaixsl:text disable-output-escaping="yes">&lt;html lang="</iaixsl:text><iaixsl:value-of select="/shop/language/option[@selected = 'true']/@name"/><iaixsl:text disable-output-escaping="yes">"</iaixsl:text><iaixsl:if test="(/shop/page/@type = 'prepaid' and /shop/page/prepaid/details/@msg = 'order') or /shop/page/@type = 'order-nonstandardized' or /shop/page/@type = 'order1' or /shop/page/@type = 'order2' or /shop/page/@type = 'pickup-sites' or /shop/page/@type = 'place-order'"><iaixsl:text disable-output-escaping="yes"> class="order_process"</iaixsl:text></iaixsl:if><iaixsl:text disable-output-escaping="yes"> &gt;</iaixsl:text>
                 <iaixsl:if test="$meta_langcode_iso639"><iaixsl:attribute name="lang"><iaixsl:value-of select="$meta_langcode_iso639"/></iaixsl:attribute></iaixsl:if>
                 <head>
-                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
+                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
                     <iaixsl:variable name="meta_breadcrumb">
                         <iaixsl:if test="(page/@type='search') or (page/@type='navigation') or (page/@type='projector')">
                             <iaixsl:choose>
@@ -107,7 +107,7 @@
                                     <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/style.css</iaixsl:attribute></link>
                                 </iaixsl:when>
                                 <iaixsl:otherwise>
-                                    <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1612518076</iaixsl:attribute></link>
+                                    <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1685223127</iaixsl:attribute></link>
                                 </iaixsl:otherwise>
                             </iaixsl:choose>
                         </iaixsl:when>
@@ -117,7 +117,7 @@
                                     <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/style.css</iaixsl:attribute></link>
                                 </iaixsl:when>
                                 <iaixsl:otherwise>
-                                    <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1612518076</iaixsl:attribute></link>
+                                    <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1685223127</iaixsl:attribute></link>
                                 </iaixsl:otherwise>
                             </iaixsl:choose>
                         </iaixsl:otherwise>
@@ -141,7 +141,7 @@
                                 <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
                             </iaixsl:when>
                             <iaixsl:otherwise>
-                                <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1612518076</iaixsl:attribute></script>
+                                <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1685223127</iaixsl:attribute></script>
                             </iaixsl:otherwise>
                         </iaixsl:choose>
                     </iaixsl:if>
@@ -242,7 +242,7 @@
                             </iaixsl:if>
                         </style>
                     </iaixsl:if>
-                <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/login.js.gzip?r=1612518076</iaixsl:attribute></script></head>
+                <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/login.js.gzip?r=1685223127</iaixsl:attribute></script></head>
                 <iaixsl:variable name="meta_body_id"/>
                 <iaixsl:text disable-output-escaping="yes">&lt;body</iaixsl:text><iaixsl:if test="action/set_render/item/@name = 'popup'"><iaixsl:text disable-output-escaping="yes"> class="popup" </iaixsl:text></iaixsl:if><iaixsl:text disable-output-escaping="yes">&gt;</iaixsl:text>
 
@@ -394,7 +394,7 @@
 												<iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
 												<iaixsl:choose>
 													<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-														<img src="/gfx/dut/loader.gif?r=1612518076">
+														<img src="/gfx/pol/loader.gif?r=1685223127">
 															<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 															<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 															<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -427,7 +427,7 @@
 										<iaixsl:otherwise>
 											<iaixsl:choose>
 												<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-													<img src="/gfx/dut/loader.gif?r=1612518076">
+													<img src="/gfx/pol/loader.gif?r=1685223127">
 														<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 														<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 														<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -2186,7 +2186,7 @@
                             <div class="login_menu col-md-6 col-12" id="products_login">
                                 <div class="login_menu_sub">
                                     <h3>
-                                        <iaixsl:choose><iaixsl:when test="$iconsproducts"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsproducts"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="products" src="/gfx/dut/products.png?r=1612518076"/></iaixsl:otherwise></iaixsl:choose>Producten</h3>
+                                        <iaixsl:choose><iaixsl:when test="$iconsproducts"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsproducts"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="products" src="/gfx/pol/products.png?r=1685223127"/></iaixsl:otherwise></iaixsl:choose>Producten</h3>
                                     <div><span>Uw boodschappenlijstje bekijken en bewerken. In dit gedeelte kunt u ook de lijst met gewenste producten bewerken die u in onze winkel wilt zien.</span></div>
 
                                     <a class="btn --outline">
@@ -2212,7 +2212,7 @@
                             <div class="login_menu col-md-6 col-12" id="orders_login">
                                 <div class="login_menu_sub">
                                     <h3>
-                                        <iaixsl:choose><iaixsl:when test="$iconsorders"><i><iaixsl:attribute name="class"><iaixsl:value-of select="$iconsorders"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="orders" src="/gfx/dut/orders.png?r=1612518076"/></iaixsl:otherwise></iaixsl:choose>AANSCHAF EN BESCHIKBARE MIDDELEN</h3>
+                                        <iaixsl:choose><iaixsl:when test="$iconsorders"><i><iaixsl:attribute name="class"><iaixsl:value-of select="$iconsorders"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="orders" src="/gfx/pol/orders.png?r=1685223127"/></iaixsl:otherwise></iaixsl:choose>AANSCHAF EN BESCHIKBARE MIDDELEN</h3>
                                     <div><span>Een sectie waar u op de hoogte kunt blijven van de voortgang van uw lopende bestellingen, uw betalingen kunt beheren en de bestellingen kunt bekijken die wij al hebben afgerond.</span></div>
                                         <a class="btn --outline">
                                             <iaixsl:if test="page/login/orders/display/@unfinished = 0">
@@ -2234,7 +2234,7 @@
                         <div class="login_menu col-md-6 col-12" id="client_cards">
                             <div class="login_menu_sub">
                                 <h3>
-                                    <iaixsl:choose><iaixsl:when test="$iconsprofit"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsprofit"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="profit" src="/gfx/dut/profity.png?r=1612518076"/></iaixsl:otherwise></iaixsl:choose>BELONINGEN VOOR EEN TROUWE KLANT</h3>
+                                    <iaixsl:choose><iaixsl:when test="$iconsprofit"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsprofit"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="profit" src="/gfx/pol/profity.png?r=1685223127"/></iaixsl:otherwise></iaixsl:choose>BELONINGEN VOOR EEN TROUWE KLANT</h3>
                                 <div><span>Ga na of u geldige klantenkaarten hebt en wat u daarvoor kunt doen. Ga ook na op welke productgroepen u korting krijgt en hoeveel.</span></div>
                                 <a class="btn --outline" href="/client-rebate.php">
                                     <iaixsl:if test="/shop/action/clientRebate/@url">
@@ -2247,7 +2247,7 @@
                             <div class="login_menu col-md-6 col-12" id="dane_login">
                                 <div class="login_menu_sub">
                                     <h3>
-                                        <iaixsl:choose><iaixsl:when test="$iconseditdata"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconseditdata"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="editdata" src="/gfx/dut/editdata.png?r=1612518076"/></iaixsl:otherwise></iaixsl:choose>
+                                        <iaixsl:choose><iaixsl:when test="$iconseditdata"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconseditdata"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="editdata" src="/gfx/pol/editdata.png?r=1685223127"/></iaixsl:otherwise></iaixsl:choose>
                                         <iaixsl:choose><iaixsl:when test="/shop/client_files/@to_download = 'true'">DANE OSOBOWE I PLIKI DO POBRANIA</iaixsl:when><iaixsl:otherwise>PERSOONLIJKE GEGEVENS</iaixsl:otherwise></iaixsl:choose>
                                     </h3>
                                     <div><span>Hier kunt u uw persoonlijke gegevens controleren of wijzigen, nieuwe afleveradressen toevoegen om te gebruiken bij een bestelling en de valuta en taal van de winkel wijzigen.</span></div>
@@ -2264,7 +2264,7 @@
                         <div class="login_menu col-md-6 col-12" id="returns_login">
                             <div class="login_menu_sub">
                                 <h3>
-                                    <iaixsl:choose><iaixsl:when test="$iconsreturns"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsreturns"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="returns" src="/gfx/dut/returns.png?r=1612518076"/></iaixsl:otherwise></iaixsl:choose>PRODUCT RETOUREN</h3>
+                                    <iaixsl:choose><iaixsl:when test="$iconsreturns"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsreturns"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="returns" src="/gfx/pol/returns.png?r=1685223127"/></iaixsl:otherwise></iaixsl:choose>PRODUCT RETOUREN</h3>
                                 <div><span>Beheer uw product retouren. In dit gedeelte kunt u de retour van een product dat u bij ons hebt gekocht toevoegen en informatie bekijken over eerder in onze winkel ingediende retouren.</span></div>
                                 <a class="btn --outline">
                                     <iaixsl:if test="not(page/actions/orders_returns/@available='true') or not(page/actions/orders_returns/@url) or page/actions/orders_returns/@url=''">
@@ -2285,7 +2285,7 @@
                             <div class="login_menu col-md-6 col-12" id="rma_login">
                                 <div class="login_menu_sub">
                                     <h3>
-                                    <iaixsl:choose><iaixsl:when test="$iconsrma"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsrma"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="rma" src="/gfx/dut/rma.png?r=1612518076"/></iaixsl:otherwise></iaixsl:choose>PRODUCTKLACHTEN</h3>
+                                    <iaixsl:choose><iaixsl:when test="$iconsrma"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsrma"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="rma" src="/gfx/pol/rma.png?r=1685223127"/></iaixsl:otherwise></iaixsl:choose>PRODUCTKLACHTEN</h3>
                                     <div><span>Hier kunt u een klacht indienen over producten in onze winkel. Als u al een klacht hebt ingediend, vindt u details over de klacht en informatie over de status van de klacht.</span></div>
                                     <a class="btn --outline">
                                         <iaixsl:attribute name="href">/rma-add.php</iaixsl:attribute>
@@ -2302,7 +2302,7 @@
                             <div class="login_menu col-md-6 col-12" id="points_login">
                                 <div class="login_menu_sub">
                                     <h3>
-                                        <iaixsl:choose><iaixsl:when test="$iconspoints"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconspoints"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="points" src="/gfx/dut/points.png?r=1612518076"/></iaixsl:otherwise></iaixsl:choose>GETROUWHEIDSPROGRAMMA<iaixsl:if test="/shop/basket/@client_points">
+                                        <iaixsl:choose><iaixsl:when test="$iconspoints"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconspoints"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="points" src="/gfx/pol/points.png?r=1685223127"/></iaixsl:otherwise></iaixsl:choose>GETROUWHEIDSPROGRAMMA<iaixsl:if test="/shop/basket/@client_points">
                                             <span>Je hebt momenteel:<strong><iaixsl:value-of select="/shop/basket/@client_points"/>punt</strong></span>
                                         </iaixsl:if>
                                     </h3>
@@ -2330,7 +2330,7 @@
                             <div class="login_menu col-md-6 col-12" id="affiliate_login">
                                 <div class="login_menu_sub">
                                     <h3>
-                                        <iaixsl:choose><iaixsl:when test="$iconsaffiliate"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsaffiliate"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="affiliate" src="/gfx/dut/affiliate.png?r=1612518076"/></iaixsl:otherwise></iaixsl:choose>AFFILIATIEPROGRAMMA</h3>
+                                        <iaixsl:choose><iaixsl:when test="$iconsaffiliate"><i><iaixsl:attribute name="class"><iaixsl:value-of disable-output-escaping="yes" select="$iconsaffiliate"/></iaixsl:attribute></i></iaixsl:when><iaixsl:otherwise><img alt="affiliate" src="/gfx/pol/affiliate.png?r=1685223127"/></iaixsl:otherwise></iaixsl:choose>AFFILIATIEPROGRAMMA</h3>
                                     <div><span>Verdien met ons! Gebruik het Affiliate Programma systeem en beveel onze winkel aan bij anderen. U kunt het gebruiken om advertenties te genereren om geld te verdienen voor uw site of voor uw volgende aankoop.</span></div>
                                     <a class="btn --outline">
                                         <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/affiliate/@link"/></iaixsl:attribute>Details controleren</a>
@@ -3114,7 +3114,7 @@
                         <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
                     </iaixsl:when>
                     <iaixsl:otherwise>
-                        <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1612518076</iaixsl:attribute></script>
+                        <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1685223127</iaixsl:attribute></script>
                     </iaixsl:otherwise>
                 </iaixsl:choose>
             </iaixsl:if>

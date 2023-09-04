@@ -8,7 +8,7 @@
                 <iaixsl:text disable-output-escaping="yes">&lt;html lang="</iaixsl:text><iaixsl:value-of select="/shop/language/option[@selected = 'true']/@name"/><iaixsl:text disable-output-escaping="yes">"</iaixsl:text><iaixsl:if test="(/shop/page/@type = 'prepaid' and /shop/page/prepaid/details/@msg = 'order') or /shop/page/@type = 'order-nonstandardized' or /shop/page/@type = 'order1' or /shop/page/@type = 'order2' or /shop/page/@type = 'pickup-sites' or /shop/page/@type = 'place-order'"><iaixsl:text disable-output-escaping="yes"> class="order_process"</iaixsl:text></iaixsl:if><iaixsl:text disable-output-escaping="yes"> &gt;</iaixsl:text>
                 <iaixsl:if test="$meta_langcode_iso639"><iaixsl:attribute name="lang"><iaixsl:value-of select="$meta_langcode_iso639"/></iaixsl:attribute></iaixsl:if>
                 <head>
-                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/dut/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
+                    <iaixsl:text disable-output-escaping="yes">&lt;meta name='viewport' content='user-scalable=no, initial-scale = 1.0, maximum-scale = 1.0, width=device-width'/&gt; &lt;link rel='preconnect' href='https://fonts.gstatic.com'&gt; &lt;link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"&gt; &lt;link rel="stylesheet" href="https://use.typekit.net/mfe7xbz.css"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/fontello.woff?v=2"&gt; &lt;link rel="preload" crossorigin="anonymous" as="font" href="/gfx/pol/TacticSansExd-BlkIt.otf?v=2"&gt;</iaixsl:text>
                     <iaixsl:variable name="meta_breadcrumb">
                         <iaixsl:if test="(page/@type='search') or (page/@type='navigation') or (page/@type='projector')">
                             <iaixsl:choose>
@@ -107,7 +107,7 @@
                                     <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/style.css</iaixsl:attribute></link>
                                 </iaixsl:when>
                                 <iaixsl:otherwise>
-                                    <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1612518076</iaixsl:attribute></link>
+                                    <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1685223127</iaixsl:attribute></link>
                                 </iaixsl:otherwise>
                             </iaixsl:choose>
                         </iaixsl:when>
@@ -117,7 +117,7 @@
                                     <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/style.css</iaixsl:attribute></link>
                                 </iaixsl:when>
                                 <iaixsl:otherwise>
-                                    <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1612518076</iaixsl:attribute></link>
+                                    <link rel="stylesheet" type="text/css"><iaixsl:attribute name="href">/gfx/<iaixsl:value-of select="language/@id"/>/style.css.gzip?r=1685223127</iaixsl:attribute></link>
                                 </iaixsl:otherwise>
                             </iaixsl:choose>
                         </iaixsl:otherwise>
@@ -139,11 +139,11 @@
                         <iaixsl:choose>
                             <iaixsl:when test="/shop/@preview &gt; 0">
                                 <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
-                    <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/orderdetails_payments.js.gzip?r=1612518076</iaixsl:attribute></script>
+                    <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/orderdetails_payments.js.gzip?r=1685223127</iaixsl:attribute></script>
                             </iaixsl:when>
                             <iaixsl:otherwise>
-                                <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1612518076</iaixsl:attribute></script>
-                    <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/orderdetails_payments.js.gzip?r=1612518076</iaixsl:attribute></script>
+                                <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1685223127</iaixsl:attribute></script>
+                    <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/orderdetails_payments.js.gzip?r=1685223127</iaixsl:attribute></script>
                             </iaixsl:otherwise>
                         </iaixsl:choose>
                     </iaixsl:if>
@@ -396,7 +396,7 @@
 												<iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
 												<iaixsl:choose>
 													<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-														<img src="/gfx/dut/loader.gif?r=1612518076">
+														<img src="/gfx/pol/loader.gif?r=1685223127">
 															<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 															<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 															<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -429,7 +429,7 @@
 										<iaixsl:otherwise>
 											<iaixsl:choose>
 												<iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-													<img src="/gfx/dut/loader.gif?r=1612518076">
+													<img src="/gfx/pol/loader.gif?r=1685223127">
 														<iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
 														<iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
 														<iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -531,7 +531,7 @@
                                                     <iaixsl:if test="text"><iaixsl:attribute name="title"><iaixsl:value-of select="text"/></iaixsl:attribute></iaixsl:if>
                                                     <iaixsl:choose>
                                                         <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                            <img src="/gfx/dut/loader.gif?r=1612518076">
+                                                            <img src="/gfx/pol/loader.gif?r=1685223127">
                                                                 <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                                 <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                                 <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -565,7 +565,7 @@
 
                                                 <iaixsl:choose>
                                                     <iaixsl:when test="image or image_desktop or image_tablet or image_mobile">
-                                                        <img src="/gfx/dut/loader.gif?r=1612518076">
+                                                        <img src="/gfx/pol/loader.gif?r=1685223127">
                                                             <iaixsl:attribute name="alt"><iaixsl:value-of select="text"/></iaixsl:attribute>
                                                             <iaixsl:attribute name="src"><iaixsl:value-of select="image/@src"/></iaixsl:attribute>
                                                             <iaixsl:if test="image_desktop or image_tablet or image_mobile">
@@ -3451,7 +3451,7 @@
                                                             <div class="credit_card_pci_dss col-12">
                                                                     <span class="pci_dss_label">Payment Card Industry Data Security Standard</span>
                                                                     <span class="pci_dss_icon_container">
-                                                                            <img src="/gfx/dut/pci_css_logo.png?r=1612518076" alt="PCI DSS Compilant"/>
+                                                                            <img src="/gfx/pol/pci_css_logo.png?r=1685223127" alt="PCI DSS Compilant"/>
                                                                     </span>
                                                             </div>
                                                     </div>
@@ -3725,7 +3725,7 @@
                 </tr>
                 <tr>
                     <td class="ordered-icon">
-                        <img src="/gfx/dut/shipping_icon.png?r=1612518076">
+                        <img src="/gfx/pol/shipping_icon.png?r=1685223127">
                             <iaixsl:if test="page/shipping/delivery[@checked='true']/@icon"><iaixsl:attribute name="src"><iaixsl:value-of select="page/shipping/delivery[@checked='true']/@icon"/></iaixsl:attribute></iaixsl:if>
                             <iaixsl:attribute name="alt"><iaixsl:value-of select="page/shipping/delivery[@checked='true']/@name"/></iaixsl:attribute>
                         </img>
@@ -3828,7 +3828,7 @@
                         <iaixsl:for-each select="/shop/page/prepaid/prepaid_history/item[@status = 'n']">
                             <tr class="payment_form_item">
                                 <td class="ordered-icon">
-                                    <img src="/gfx/dut/prepaid_method_icon.png?r=1612518076">
+                                    <img src="/gfx/pol/prepaid_method_icon.png?r=1685223127">
                                         <iaixsl:if test="@icon">
                                             <iaixsl:attribute name="src"><iaixsl:value-of select="@icon"/></iaixsl:attribute>
                                         </iaixsl:if>
@@ -3853,7 +3853,7 @@
                     <iaixsl:when test="not(not(page/prepaid_methods/item[@checked='true']) and not(page/prepaid/details/@paymentstatus = 'g') and not(page/prepaid/details/@paymentstatus = 'tc'))">
                         <tr>
                             <td class="ordered-icon">
-                                <img src="/gfx/dut/prepaid_method_icon.png?r=1612518076">
+                                <img src="/gfx/pol/prepaid_method_icon.png?r=1685223127">
                                     <iaixsl:if test="/shop/page/prepaid/prepaid_history/item[position() = last()]/@icon and not(page/prepaid/details/@paymentstatus = 'g')">
                                         <iaixsl:attribute name="src"><iaixsl:value-of select="/shop/page/prepaid/prepaid_history/item[position() = last()]/@icon"/></iaixsl:attribute>
                                     </iaixsl:if>
@@ -3920,7 +3920,7 @@
 
                     <tr>
                         <td class="ordered-icon">
-                            <img src="/gfx/dut/insurance_icon.png?r=1612518076" alt="insurance_icon"/>
+                            <img src="/gfx/pol/insurance_icon.png?r=1685223127" alt="insurance_icon"/>
                         </td>
                         <td class="ordered-name">Kopersbescherming:<strong><iaixsl:value-of select="/shop/page/insurance_product/@service"/></strong>
                             <ul>
@@ -3954,7 +3954,7 @@
 
                 <tr style="display:none" id="prepaid_item_copy">
                     <td class="ordered-icon">
-                        <img src="/gfx/dut/prepaid_method_icon.png?r=1612518076">
+                        <img src="/gfx/pol/prepaid_method_icon.png?r=1685223127">
                             <iaixsl:attribute name="alt">.</iaixsl:attribute>
                         </img>
                     </td>
@@ -4318,7 +4318,7 @@
                     <div class="actions_return_sub col-12 mb-4">
                         <h3>Probleemloze teruggave van producten</h3>
                         <div>
-                            <img alt="returns" src="/gfx/dut/returns_action.png?r=1612518076"/><span>Als u gebruik wilt maken van uw recht om uw aankoop zonder opgaaf van reden te retourneren, gebruik dan ons retoursysteem, dat het proces eenvoudig en veilig maakt.</span></div>
+                            <img alt="returns" src="/gfx/pol/returns_action.png?r=1685223127"/><span>Als u gebruik wilt maken van uw recht om uw aankoop zonder opgaaf van reden te retourneren, gebruik dan ons retoursysteem, dat het proces eenvoudig en veilig maakt.</span></div>
                             <a class="btn --solid">
                                 <iaixsl:attribute name="title">Klik om een productclaim in te dienen bij de winkel.</iaixsl:attribute>
                                 <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/prepaid/actions/return/@url"/></iaixsl:attribute><iaixsl:value-of select="$prepaidrt_txt"/>
@@ -4331,7 +4331,7 @@
                     <div class="actions_rma_sub col-12">
                         <h3>Probleemloze productclaim</h3>
                         <div>
-                            <img alt="rma" src="/gfx/dut/rma_action.png?r=1612518076"/><span>Als het product in goede staat was op het moment van levering, maar defect is geraakt en u een garantieclaim wilt indienen via onze winkel, gebruik dan ons claimsysteem, dat het proces gemakkelijker en sneller maakt.</span></div>
+                            <img alt="rma" src="/gfx/pol/rma_action.png?r=1685223127"/><span>Als het product in goede staat was op het moment van levering, maar defect is geraakt en u een garantieclaim wilt indienen via onze winkel, gebruik dan ons claimsysteem, dat het proces gemakkelijker en sneller maakt.</span></div>
                             <a class="btn --solid">
                                 <iaixsl:attribute name="title">Klik om het product terug te sturen naar de winkel.</iaixsl:attribute>
                                 <iaixsl:attribute name="href"><iaixsl:value-of select="/shop/page/prepaid/actions/rma/@url"/></iaixsl:attribute><iaixsl:value-of select="$prepaidzt_txt"/>
@@ -5124,11 +5124,11 @@
                 <iaixsl:choose>
                     <iaixsl:when test="/shop/@preview &gt; 0">
                         <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/<iaixsl:value-of select="/shop/@preview"/>/shop.js</iaixsl:attribute></script>
-                        <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/orderdetails_payments.js.gzip?r=1612518076</iaixsl:attribute></script>
+                        <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/orderdetails_payments.js.gzip?r=1685223127</iaixsl:attribute></script>
                     </iaixsl:when>
                     <iaixsl:otherwise>
-                        <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1612518076</iaixsl:attribute></script>
-                        <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/orderdetails_payments.js.gzip?r=1612518076</iaixsl:attribute></script>
+                        <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/shop.js.gzip?r=1685223127</iaixsl:attribute></script>
+                        <script><iaixsl:attribute name="src">/gfx/<iaixsl:value-of select="language/@id"/>/orderdetails_payments.js.gzip?r=1685223127</iaixsl:attribute></script>
                     </iaixsl:otherwise>
                 </iaixsl:choose>
             </iaixsl:if>
