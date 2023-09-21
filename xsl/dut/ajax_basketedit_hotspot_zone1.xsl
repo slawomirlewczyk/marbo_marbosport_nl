@@ -120,6 +120,9 @@
                                                             
                                                             <iaixsl:when test="$var_size_min_formatted != $var_size_max_formatted">
                                                                 <iaixsl:if test="$var_size_min_maxprice_formatted != ''">
+                                                                    <span class="omnibus-price">
+                                                                        Laagste productprijs in de afgelopen 30 dagen: <iaixsl:value-of select="price/@omnibus_price_formatted"/>
+                                                                    </span>
                                                                     <del class="price --max">
                                                                         <span><iaixsl:value-of select="$var_size_min_maxprice_formatted"/></span><b><iaixsl:text> - </iaixsl:text></b><span><iaixsl:value-of select="$var_size_max_maxprice_formatted"/></span>
                                                                     </del>
@@ -153,6 +156,9 @@
                                                             
                                                             <iaixsl:otherwise>
                                                                 <iaixsl:if test="$var_maxprice_formatted != ''">
+                                                                    <span class="omnibus-price">
+                                                                        Laagste productprijs in de afgelopen 30 dagen: <iaixsl:value-of select="price/@omnibus_price_formatted"/>
+                                                                    </span>
                                                                     <del class="price --max">
                                                                         <iaixsl:value-of select="$var_maxprice_formatted"/>
                                                                     </del>
@@ -204,6 +210,9 @@
                                                             
                                                             <iaixsl:when test="$var_size_min_net_formatted != $var_size_max_net_formatted">
                                                                 <iaixsl:if test="$var_size_min_net_maxprice_formatted != ''">
+                                                                    <span class="omnibus-price">
+                                                                        Laagste productprijs in de afgelopen 30 dagen: <iaixsl:value-of select="price/@omnibus_price_formatted"/>
+                                                                    </span>
                                                                     <del class="price --max">
                                                                         <span><iaixsl:value-of select="$var_size_min_net_maxprice_formatted"/></span><b><iaixsl:text> - </iaixsl:text></b><span><iaixsl:value-of select="$var_size_max_maxprice_net_formatted"/></span><iaixsl:value-of select="$var_net_prices"/>
                                                                     </del>
@@ -237,6 +246,9 @@
                                                             
                                                             <iaixsl:otherwise>
                                                                 <iaixsl:if test="$var_maxprice_net_formatted != ''">
+                                                                    <span class="omnibus-price">
+                                                                        Laagste productprijs in de afgelopen 30 dagen: <iaixsl:value-of select="price/@omnibus_price_formatted"/>
+                                                                    </span>
                                                                     <del class="price --max">
                                                                         <iaixsl:value-of select="$var_maxprice_net_formatted"/><iaixsl:value-of select="$var_net_prices"/>
                                                                     </del>
